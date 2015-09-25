@@ -14,13 +14,25 @@
 </head>
 <body>
 
-<h1>Elsevier</h1>
+<h1></h1>
+<img src="elsevier.png" alt ="Elsevier" height="300" width="300">
 
-<input type="search" placeholder="Search" id="search"/>
-<button type="button" id="listBtn" onclick="loadJSON()">Show List of All Titles</button>
+<br>
+<br>
+<br>
+<button type="button" class="listBtn" onclick="listTitles();">Show List of All Titles</button>
+
+<input type="text" placeholder ="Search..." id="txtSearch" onkeyup="if (event.keyCode == 13) document.getElementById('btnSearch').click()"/>
+<input type="button" id="btnSearch" value="Search" onclick="searchByTitle();" />
+<label id="resultsLabel">Number of Results:</label><select id="noOfResults" onchange="updateDisplayNo();">
+    <option value="10">10</option>
+    <option value="25">25</option>
+    <option value="50">50</option>
+    <option value="100">100</option>
+</select>
 <div id="container"></div>
-<button type="button" id="Prev" onclick="prevBooks()">Prev</button>
-<button type="button" id="Next" onclick="nextBooks()">Next</button>
+<button type="button" id="Prev" class="listBtn" onclick="prevBooks()">Prev</button>
+<button type="button" id="Next" class="listBtn" onclick="nextBooks()">Next</button>
 
 <p id="buttonChk"></p>
 <p id="parserChk"></p>
