@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <script type="text/javascript" src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script type="text/javascript" src="indexScripts.js"></script>
+
+
+    <title>Elsevier</title>
+</head>
+<body>
+
+<h1>Elsevier</h1>
+
+<input type="search" placeholder="Search" id="search"/>
+<button type="button" id="listBtn" onclick="loadJSON()">Show List of All Titles</button>
+<div id="container"></div>
+<button type="button" id="Prev" onclick="prevBooks()">Prev</button>
+<button type="button" id="Next" onclick="nextBooks()">Next</button>
+
+<p id="buttonChk"></p>
+<p id="parserChk"></p>
+</body>
+</html>
