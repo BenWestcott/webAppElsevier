@@ -1,0 +1,50 @@
+
+.listBtn {
+    background: #E9711C;
+    background-image: -webkit-linear-gradient(top, #E9711C, #E9711C);
+    background-image: -moz-linear-gradient(top, #E9711C, #E9711C);
+    background-image: -ms-linear-gradient(top, #E9711C, #E9711C);
+    background-image: -o-linear-gradient(top, #E9711C, #E9711C);
+    background-image: linear-gradient(to bottom, #E9711C, #E9711C);
+    -webkit-border-radius: 60;
+    -moz-border-radius: 60;
+    border-radius: 60px;
+    font-family: Georgia;
+    color: #ffffff;
+    font-size: 20px;
+    padding: 8px 20px 10px 20px;
+    text-decoration: none;
+}
+
+.listBtn:hover {
+    background: #3cb0fd;
+    background-image: -webkit-linear-gradient(top, #3cb0fd, #3498db);
+    background-image: -moz-linear-gradient(top, #3cb0fd, #3498db);
+    background-image: -ms-linear-gradient(top, #3cb0fd, #3498db);
+    background-image: -o-linear-gradient(top, #3cb0fd, #3498db);
+    background-image: linear-gradient(to bottom, #3cb0fd, #3498db);
+    text-decoration: none;
+}
+
+.listBtn:focus {
+    outline:0;
+}
+
+.bookEntry{
+    font-family: Georgia;
+}
+#txtSearch{
+   position: relative;
+    left:80px;
+}
+
+#resultsLabel{
+    position: relative;
+    left: 30px;
+}
+
+#noOfResults{
+    position: relative;
+    left: 30px;
+}
+
