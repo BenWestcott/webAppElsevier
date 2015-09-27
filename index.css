@@ -1,4 +1,4 @@
-
+/* Orange Buttons */
 .listBtn {
     background: #E9711C;
     background-image: -webkit-linear-gradient(top, #E9711C, #E9711C);
@@ -6,8 +6,8 @@
     background-image: -ms-linear-gradient(top, #E9711C, #E9711C);
     background-image: -o-linear-gradient(top, #E9711C, #E9711C);
     background-image: linear-gradient(to bottom, #E9711C, #E9711C);
-    -webkit-border-radius: 60;
-    -moz-border-radius: 60;
+    -webkit-border-radius: 60px;
+    -moz-border-radius: 60px;
     border-radius: 60px;
     font-family: Georgia;
     color: #ffffff;
@@ -29,22 +29,70 @@
 .listBtn:focus {
     outline:0;
 }
-
+/* Paragraphs */
 .bookEntry{
+    position: relative;
+    left: 20px;
     font-family: Georgia;
 }
-#txtSearch{
-   position: relative;
-    left:80px;
+
+/* Search Button */
+#btnSearch{
+    display: none;
 }
 
+/* Search Box */
+#txtSearch{
+    position: relative;
+    left:200px;
+    background: url(search-white.png) no-repeat 10px 6px #E9711C;
+    border: 0 none;
+    font-family: NexusSans,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 12px;
+    color: white;
+    width: 70px;
+    padding: 6px 15px 6px 35px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 20px;
+    -webkit-transition: all 0.7s ease 0s;
+    -moz-transition: all 0.7s ease 0s;
+    -o-transition: all 0.7s ease 0s;
+    transition: all 0.7s ease 0s;
+}
+#txtSearch:focus {
+    width: 200px;
+    outline:0;
+}
+
+::-webkit-input-placeholder {
+    color: white;
+}
+
+:-moz-placeholder { / Firefox 18- /
+color: white;
+}
+
+::-moz-placeholder {  / Firefox 19+ /
+color: white;
+}
+
+:-ms-input-placeholder {
+    color: white;
+}
+
+/* Search Label */
 #resultsLabel{
     position: relative;
-    left: 30px;
+    font-family: NexusSans,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 12px;
+    left: 200px;
 }
 
+/* Drop-down Box */
 #noOfResults{
     position: relative;
-    left: 30px;
+    font-family: NexusSans,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 12px;
+    left: 200px;
 }
-
