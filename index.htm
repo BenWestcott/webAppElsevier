@@ -25,9 +25,9 @@
 <input type="text" placeholder ="Search..." id="txtSearch" onkeyup="if (event.keyCode == 13) document.getElementById('btnSearch').click()"/>
 <input type="button" id="btnSearch" value="Search" onclick="searchByTitle();" />
 <label id="resultsLabel">Number of Results:</label><select id="noOfResults" onchange="updateDisplayNo();">
+    <option value="5">5</option>
     <option value="10">10</option>
     <option value="25">25</option>
-    <option value="50">50</option>
     <option value="100">100</option>
 </select>
 <div id="container"></div>
